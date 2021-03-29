@@ -1,2 +1,6 @@
 # Flipping-Coins-with-RoBERTa
-Final project for Stanford XCS224U - Natural Language Understanding 
+### Final project for Stanford XCS224U - Natural Language Understanding 
+
+This  paper  shows  an  application  of  trans-former  models  (RoBERTa)  to  predict  stockmarket  movement.    Our  research  efforts  fo-cused on extracting the financial 'sentiment' ofstock-price  performance  by  leveraging  com-pany  filings.   We  used  the  SEC  data  to  trainour model and used the equal weighted NAS-DAQ 100 index as our benchmark.  Recogniz-ing the strengths of a sentiment classificationtask, we adopted stock-performance as a proxyfor 'sentiment.' This predicted stock outcomescompared to the market index. Our initial suc-cess  came  from  removing  noise  in  the  formof  boilerplate  text.   Next,  we  chose  logisticregression and the Naive Bayes classificationmodel on smaller data sets with iterative opti-mization for the testing model. Finally, we ranour original system with RoBERTa for stockprice performance 'sentiment' predictions. Wefound that transformer and traditional machinelearning approaches produced sub-optimal re-sults  that  are  on  par  with  a  random  guess,which is why we included our cheeky coin tossresults.   The  real  challenge,  as  our  researchconfirmed, came from the sentiment free toneused in the company filings.
+
+To work with the parsed data and cleaned dataframes, [download the pickle_data folder](https://www.dropbox.com/s/ah8ds55r6ktguaz/pickle_data.zip?dl=1), and place the folder in the same directory as the notebooks.
